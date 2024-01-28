@@ -14,20 +14,6 @@ body {
     justify-content: center;
 }
 
-@media (max-width: 991px) {
-    .menu-bg {
-        background-color: #323335;
-    }
-
-    .menu-btn {
-        background-color: #fff;
-    }
-
-    .nav-link:nth-child(2) {
-        margin: 0 !important;
-    }
-}
-
 .hero-title {
     font-size: 64px;
     line-height: 1.2;
@@ -48,16 +34,6 @@ body {
     background-color: #753dca;
 }
 
-@media (max-width: 1400px) {
-    .hero-title {
-        font-size: 48px;
-    }
-
-    .hero-desc {
-        font-size: 20px;
-    }
-}
-
 .gta-img {
     flex:1.5;
     height: 330px;
@@ -72,4 +48,87 @@ body {
 
 .gta-img:hover {
     background-color: #8d46f6;
+}
+
+.fortnite-img  {
+    flex: 1;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 56px;
+    margin-left: 8px;
+    background-color: #fdf386;
+    transition: 0.2s ease-in;
+    overflow-y: clip;
+}
+.fortnite-img:hover {
+    background-color: #71e66e;
+}
+
+.dota-img {
+    display: flex;
+    height: 330px;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 56px;
+    margin-top: 16px;
+    background-color: #69adfd;
+    transition: 0.2s ease-in;
+    overflow-y: clip;
+}
+
+.dota-img:hover {
+    background-color: #fcb8ff;
+}
+
+.dota-img img {
+    object-fit: contain;
+    width: 100%;
+    object-position: center;
+    height: 100%;
+}
+
+/* Мобильная версия */
+
+@media (max-width: 1400px) {
+    .hero-title {
+        font-size: 48px;
+    }
+
+    .hero-desc {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .menu-bg {
+        background-color: #323335;
+    }
+
+    .menu-btn {
+        background-color: #fff;
+    }
+
+    .nav-link:nth-child(2) {
+        margin: 0 !important;
+    }
+
+    .btn-purple {
+        display: block;
+    }
+}
+
+@media (max-width: 420px) {
+    .first-card-row {
+        flex-direction: column;
+    }
+    .gta-img {
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+    .hero-title {
+        font-size: 38px;
+    }
 }
