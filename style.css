@@ -5,8 +5,8 @@
 
 body {
     background: #1B1C1F;
-}
 
+}
 .navigation {
     background-color: #323335;
     border-radius: 24px;
@@ -90,6 +90,10 @@ body {
     height: 100%;
 }
 
+.footer-link:nth-child(2) {
+    margin: 0 80px;
+}
+
 /* Мобильная версия */
 
 @media (max-width: 1400px) {
@@ -128,7 +132,16 @@ body {
         margin-right: 0;
         margin-bottom: 24px;
     }
+    .fortnite-img {
+        margin: 0;
+    }
     .hero-title {
         font-size: 38px;
+    }
+    .footer-content {
+        flex-direction: column;
+    }
+    .footer-link:nth-child(2) {
+        margin: 0;
     }
 }
